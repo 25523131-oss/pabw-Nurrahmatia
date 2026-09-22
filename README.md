@@ -20,5 +20,6 @@ Bagian yang dibantu AI :
 - mencari ukuran gambar untuk web Broeser
 - mencari sinopsis dari buku
 - mencari pengertian atribut/elemen
+
 Bagian yang dikerjakan sendiri :
 semuanya, kecuali yang paparkan diatas. 
