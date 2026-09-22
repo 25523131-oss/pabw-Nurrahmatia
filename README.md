@@ -16,4 +16,9 @@ Topik halaman saya: koleksi buku di rak saya.
 
 ## Catatan penggunaan AI
 
-Tulis bagian mana yang dibantu AI dan bagian mana yang dikerjakan sendiri.
+Bagian yang dibantu AI : 
+- mencari ukuran gambar untuk web Broeser
+- mencari sinopsis dari buku
+- mencari pengertian atribut/elemen
+Bagian yang dikerjakan sendiri :
+semuanya, kecuali yang paparkan diatas. 
