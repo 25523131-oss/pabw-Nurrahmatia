@@ -23,3 +23,17 @@ Bagian yang dibantu AI :
 
 Bagian yang dikerjakan sendiri :
 semuanya, kecuali yang paparkan diatas. 
+
+## Pertemuan 4 - Design token halaman profil
+
+- Berkas gaya yang akan dibuat : tokens.css, base.css, layout.css, komponen.css, tema.css
+- Warna utama: #39B2BF (biru), dipilih karena saya menyukai warna tersebut
+
+### Token yang saya tetapkan 
+| --color-primary | #72C0C2 | tombol, tautan, penanda |
+| --color-fg | #E8DCBC| warna teks utama |
+| --color-bg | #39B2BF | latar halaman |
+| --radius-md | 0.5rem | sudut tombol dan kartu |
+| --space-4 | 1rem | jarak standar antar elemen |
+
+Kriteria selesai saya : mengubah --color primary di satu sisi baris dan juga harus mengubah warrna tombol, tautan, judul, dan garis fokus.
