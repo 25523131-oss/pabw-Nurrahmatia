@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  KERANGKA AWAL — Halaman Profil Saya
+  PABW 2026/2027 · Pertemuan 3
+
+  Cara pakai:
+  1. Salin berkas ini, ganti nama menjadi profil.html
+  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
+  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
+  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
+
+  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
+  komentar itu adalah daftar periksa Anda sendiri.
+-->
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyLibrary</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <header>
+    <div class ="header-baris">
+    <input type="checkbox" id="tema" class="pengalih-tema">
+    <label for="tema" class="tombol-tema">Tema gelap</label>
+      <h1>MyLibrary</h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#bagian-1">Koleksi Buku</a></li>
+          <li><a href="#bagian-2">Cari Buku</a></li>
+          <li><a href="#bagian-3">Tentang MyLibrary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <section id="bagian-1">
+      <h2>Koleksi Buku</h2>
+    <table>
+      <caption>Tabel.KoleksiBukuSaya</caption>
+      <thead>
+        <tr>
+          <th scope="col">Judul</th>
+          <th scope="col">Penulis</th>
+          <th scope="col">Jumlah Halaman</th>
+          <th scope="col">Genre</th>
+          <th scope="col">Tahun Terbit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Laut Bercerita</th>
+          <td>Leila S. Chudori</td>
+          <td>379 halaman</td>
+          <td>Fiksi Histori</td>
+          <td>2017</td>
+        </tr>
+        <tr>
+          <th scope="row">3726 mdpl</th>
+          <td>Nurwina Sari</td>
+          <td>280 halaman</td>
+          <td>Romance</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <th scope="row">Pulang</th>
+          <td>Tere Liye</td>
+          <td>400 halaman</td>
+          <td> Fiksi Aksi,Petualangan</td>
+          <td>2015</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  <figure>
+    <img src="Laut Bercerita.webp"
+       alt="gambar-Buku Laut Bercerita"
+       width="400" height="600" loading="lazy">
+    <figcaption> Laut Bercerita adalah novel fiksi sejarah karya Leila S. Chudori yang diterbitkan pertama kali pada Oktober 2017 
+     oleh Kepustakaan Populer Gramedia (KPG), serta telah diadaptasi menjadi film pendek berdurasi 30 menit pada tahun 2017 
+     dan diterjemahkan ke dalam bahasa Inggris dengan judul The Sea Speaks His Name (2020). 
+     Buku Laut Bercerita ini menceritakan tentang sudut pandang seorang Biru Laut. Ia adalah seorang mahasiswa 
+     program studi Sastra Inggris di Universitas Gadjah Mada, Yogyakarta. Laut memiliki ketertarikan terhadap dunia sastra dan tulisan 
+     karena turun dari ayahnya yang merupakan seorang wartawan Harian Solo. 
+     Laut memiliki banyak koleksi buku sastra klasik, baik dalam bahasa Indonesia maupun bahasa Inggris.Saat itu, beberapa buku sempat 
+     dilarang peredarannya oleh pemerintah karena dianggap membahayakan, termasuk buku-buku karya penulis Pramoedya Ananta Toer.
+     Buku Laut Bercerita ini mengajak pembaca untuk merenungkan masa lalu yang penuh dengan kepahitan dan kekejaman. 
+     Selain itu, terdapat pesan yang menggambarkan semangat perjuangan dan kebebasan yang diusung oleh para aktivis muda.</figcaption>
+  </figure>
+
+  <figure>
+     <img src="3726 mdpl.webp"
+       alt="gambar-Buku 3726 mdpl"
+       width="500" height="584" loading="lazy">
+    <figcaption>Novel 3726 MDPL adalah buku karya Nurwina Sari yang diterbitkan pertama kali pada tahun 2024 dengan 280 halaman. 
+     Buku 3726 mdpl ini menceritakan tentang perjalanan cinta dalam diam antara Rangga Raja dan Anindi Hangura selama 4 tahun.
+     Di sisi lain, Andini menjalani hari-harinya tanpa menyadari perasaan Rangga karena ia sendiri juga masih terjebak dalam bayang-bayang 
+     masa lalu yang belum usai. Hubungan keduanya mulai mengalami titik balik ketika Rangga memutuskan untuk mendaki Gunung Rinjani. 
+     Dari puncak tertinggi pulau Lombok tersebut, pada ketinggian 3726 meter di atas permukaan laut (mdpl), Rangga mengirimkan ucapan ulang tahun
+     untuk Anindi. Kisah yang awalnya sangat populer sebagai Alternative Universe (AU) di platform X (Twitter) ini memadukan romansa masa kuliah 
+     dengan petualangan alam yang megah. Melalui latar Gunung Rinjani, novel ini menggambarkan bahwa mencintai seseorang terkadang seperti 
+     mendaki gunung yang tinggi, penuh perjuangan, melelahkan.</figcaption>
+  </figure>
+
+  <figure>
+     <img src="Pulang.webp"
+       alt="gambar-Buku Pulang"
+       width="400" height="600" loading="lazy">
+    <figcaption>Buku Novel Pulang karya Tere Liye diterbitkan pada tahun 2015 oleh penerbit Jakarta Republika dengan 400 halaman. Novel Pulang ini 
+     menceritakan tentang petualangan hidup remaja berusia 15 tahun yang mengalami kesulitan di hutan Rimba Sumatra, remaja tersebut memiliki kemampuan hebat dalam berburu babi hutan. 
+     Hal itu membuat Teuku Muda terkesan, Bapak tua itu kemudian membawanya ke kota untuk diasuh layaknya anak angkat.Tokoh utama dalam sinopsis novel Pulang bernama Bujang.
+     Cerita dalam novel ini dibawakan dengan alur menarik dan kompleks. Melalui tokoh utama dan karakter lain, novel Pulang memuat pesan moral yang dekat 
+     dengan kehidupan sehari-hari.Novel Pulang juga cocok dijadikan sebagai bahan untuk membuat resensi.
+    </figcaption>
+  </figure>
+
+<section id="bagian-2">
+  <h2>Cari Buku</h2>
+  <form action="/simpan" method="post">
+    <p>
+      <label for="Judul">Judul</label>
+      <input type="text" id="Judul" name="kolom-judul" required>
+    </p>
+    <p>
+      <label for="Penulis">Penulis</label>
+      <input type="text" id="Penulis" name="kolom-penulis" required>
+    </p>
+    <p>
+      <label for="Tahun Terbit">Tahun Terbit</label>
+      <input type="number" id="Tahun Terbit" name="kolom-tahun terbit" required>
+    </p>
+    <button type="submit">Simpan</button>
+  </form>
+  </section>
+
+<section id="bagian-3">
+      <h2>Tentang MyLibrary</h2>
+      <p>MyLibrary adalah salah satu web Browser yang berisikan koleksi buku yang dimiliki oleh seorang mahasiswi bernama Nurrahmatia, yang sekarang sedang menempuh pendidikan
+        di perguruan tinggi swasta yang ada di Yogyakarta. Nama MyLibrary itu sendiri berarti 'perpustakaanku' yang terinspirasi oleh jumlah koleksi buku yang dimiliki.
+        Happy Reading All  </p>
+</section>
+</main>
+
+<footer>
+    <p>Nurrahmatia · 25523131 · 2026</p>
+  </footer>
+</body>
+</html>
