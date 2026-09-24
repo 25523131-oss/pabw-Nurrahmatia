@@ -11,3 +11,18 @@
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
   }
 }
+ 
+/* CSS */
+.pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
+ 
+/* Pilihan manual HARUS berada setelah blok media query,
+   supaya menang saat keduanya menyala bersamaan. */
+:root:has(#tema:checked) {
+  --color-bg:     #1c1917;
+  --color-fg:      #fbf0d9;
+  --color-surface: #2A2421;
+  --color-border:  #4A3E39;
+  --color-primary: #e9c600ce;
+  --color-danger:  #FF8A8A;
+  --color-focus:   #F4D068;
+}
