@@ -24,7 +24,7 @@ button {
   border: 1px solid transparent;
   border-radius: var(--radius-md);
   background: var(--color-primary);
-  color: var(--color-surface);
+  color: var(--color-prim-fg);
   cursor: pointer;
 }
 

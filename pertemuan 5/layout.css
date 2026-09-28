@@ -68,13 +68,14 @@ footer {
   align-items: center;
 }
 
-/* .isi{
+.isi{ 
   display: grid;
   grid-template-columns: 16rem 1fr;
+  gap: var(--space-4);
   grid-template-areas: 
   "sisi utama"
-  "sisi bawah"; } */
-
+  "sisi bawah"; 
+} 
 
 .sisi {grid-area: sisi;}
 .utama {grid-area: utama;}

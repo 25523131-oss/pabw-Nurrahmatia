@@ -30,11 +30,12 @@
 :root {
   --color-bg:       var(--palet-warna-3);
   --color-fg:       var(--palet-warna-4);
-  --color-surface:  var(--palet-warna-5);
+  --color-surface:  var(--palet-warna-2);
   --color-border:   var(--palet-warna-6);
   --color-primary:  var(--palet-warna-6);
   --color-danger:   var(--palet-warna-7);
   --color-focus:    var(--palet-warna-2);
+  --color-prim-fg: var(--palet-warna-4);
  
   --card-pad:       var(--space-4);
   --section-gap:    var(--space-2);

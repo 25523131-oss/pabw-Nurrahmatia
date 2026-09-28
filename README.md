@@ -31,10 +31,38 @@ semuanya, kecuali yang paparkan diatas.
 - saya juga mengganti subjeck saya, yang awalnya form koleksi buku menjadi cari buku
 
 ### Token yang saya tetapkan 
-| --color-primary | #e1a72aea | tombol, tautan, penanda |
-| --color-fg | #2b261f| warna teks utama |
-| --color-bg | #fbf0d9 | latar halaman |
-| --radius-md | 0.5rem | sudut tombol dan kartu |
-| --space-4 | 1rem | jarak standar antar elemen |
+|--palet-warna-1: | #39270c; | warna backround tema gelap
+|--palet-warna-2: | #e1a72a; | warna tombol, dan warna kartu 
+|--palet-warna-3: | #fbf0d9; | warna backround tema terang
+|--palet-warna-4: | #1c1917; | warna font saat tema terang
+|--palet-warna-5: | #FFFFFF; |warna font pada batton simpan saat tema terang
+|--palet-warna-6: | #e8d9bc; | warna font pada button simpan saat tema gelap
+|--palet-warna-7: | #ff0000; | warna tanda apabila kolom form telah diketik dan dihapus kemabali
+
+ 
+  --space-1: 0.25rem; |
+  --space-2: 0.8rem; |
+  --space-3: 0.85rem; |
+  --space-4: 1rem; |
+  --space-6: 1.5rem; |
+ 
+  --radius-md: 0.5rem; |
+  --radius-full : 999px; |
+  --shadow-1:  0 1px 3px rgba(0, 0, 0, .10); |
+ 
+  --text-sm:  0.875rem; |
+  --text-md:  1rem; |
+  --text-xl:  1.5rem; |
+  --text-3xl: 2.25rem; |
 
 Kriteria selesai saya : mengubah --color primary di satu sisi baris dan juga harus mengubah warrna tombol, tautan, judul, dan garis fokus.
+
+## Catatan penggunaan AI
+mencari warna, mencari nilai contras ratio, mencari penyebab error dari kode 
+
+## Pertemuan 5 - Flexbox dan Grid
+
+- berkas yang saya buat : membuat flexbox dan grid di halaman website dan menambahkan kartu di setiap gambar yang ada,menambahkan sidebar pada halaman. 
+
+## Catatan penggunaan AI
+mencari bentuk layout flexbox dan grid, mencari bentuk sidebar, serta mencari div dan selection mana yang belum sempat ditutup.

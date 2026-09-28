@@ -2,12 +2,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg:      var(--palet-warna-4);
-    --color-fg:      var(--palet-warna-5);
+    --color-fg:      var(--palet-warna-3);
     --color-surface: var(--palet-warna-5);
     --color-border:  var(--palet-warna-6);
     --color-primary: var(--palet-warna-3);  /* versi lebih terang agar kontras tetap lolos */
     --color-danger:  var(--palet-warna-7);
     --color-focus:   var(--palet-warna-2);
+    --color-prim-fg: var(--palet-warna-4);
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
   }
 }
@@ -18,11 +19,12 @@
 /* Pilihan manual HARUS berada setelah blok media query,
    supaya menang saat keduanya menyala bersamaan. */
 :root:has(#tema:checked) {
-  --color-bg:     var(--palet-warna-4);
-  --color-fg:      var(--palet-warna-5);
+  --color-bg:      var(--palet-warna-4);
+  --color-fg:      var(--palet-warna-3);
   --color-surface: var(--palet-warna-5);
   --color-border:  var(--palet-warna-6);
   --color-primary: var(--palet-warna-3);
   --color-danger:  var(--palet-warna-7);
+  --color-prim-fg: var(--palet-warna-4);
   --color-focus:   var(--palet-warna-2);
 }
