@@ -69,7 +69,7 @@ footer {
   align-items: center;
 }
 
-.isi {
+.main {
   display: grid;
   grid-template-columns: 16rem 1fr;
   gap: var(--space-6);
