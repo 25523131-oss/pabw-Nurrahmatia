@@ -1,13 +1,13 @@
 /* Ikut pengaturan sistem: lapis semantik saja yang diganti */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg:      var(--gray-900);
-    --color-fg:      var(--gray-50);
-    --color-surface: #FFFFFF;
-    --color-border:  #e8d9bc;
-    --color-primary: var(--blue-700);  /* versi lebih terang agar kontras tetap lolos */
-    --color-danger:  #e4ae39e6;
-    --color-focus:   var(--blue-500);
+    --color-bg:      var(--palet-warna-4);
+    --color-fg:      var(--palet-warna-5);
+    --color-surface: var(--palet-warna-5);
+    --color-border:  var(--palet-warna-6);
+    --color-primary: var(--palet-warna-3);  /* versi lebih terang agar kontras tetap lolos */
+    --color-danger:  var(--palet-warna-7);
+    --color-focus:   var(--palet-warna-2);
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
   }
 }
@@ -18,11 +18,11 @@
 /* Pilihan manual HARUS berada setelah blok media query,
    supaya menang saat keduanya menyala bersamaan. */
 :root:has(#tema:checked) {
-  --color-bg:     #1c1917;
-  --color-fg:      #fbf0d9;
-  --color-surface: #2A2421;
-  --color-border:  #4A3E39;
-  --color-primary: #e9c600ce;
-  --color-danger:  #FF8A8A;
-  --color-focus:   #F4D068;
+  --color-bg:     var(--palet-warna-4);
+  --color-fg:      var(--palet-warna-5);
+  --color-surface: var(--palet-warna-5);
+  --color-border:  var(--palet-warna-6);
+  --color-primary: var(--palet-warna-3);
+  --color-danger:  var(--palet-warna-7);
+  --color-focus:   var(--palet-warna-2);
 }

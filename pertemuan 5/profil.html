@@ -43,45 +43,49 @@
   </header>
  
   <main>
-    <section id="bagian-1">
-      <h2>Koleksi Buku</h2>
-    <table>
-      <caption>Tabel.KoleksiBukuSaya</caption>
-      <thead>
-        <tr>
-          <th scope="col">Judul</th>
-          <th scope="col">Penulis</th>
-          <th scope="col">Jumlah Halaman</th>
-          <th scope="col">Genre</th>
-          <th scope="col">Tahun Terbit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Laut Bercerita</th>
-          <td>Leila S. Chudori</td>
-          <td>379 halaman</td>
-          <td>Fiksi Histori</td>
-          <td>2017</td>
-        </tr>
-        <tr>
-          <th scope="row">3726 mdpl</th>
-          <td>Nurwina Sari</td>
-          <td>280 halaman</td>
-          <td>Romance</td>
-          <td>2024</td>
-        </tr>
-        <tr>
-          <th scope="row">Pulang</th>
-          <td>Tere Liye</td>
-          <td>400 halaman</td>
-          <td> Fiksi Aksi,Petualangan</td>
-          <td>2015</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class = "isi">
+      <div class = "utama">
+        <section id="bagian-1">
+          <h2>Koleksi Buku</h2>
+          <table>
+            <caption>Tabel.KoleksiBukuSaya</caption>
+            <thead>
+              <tr>
+                <th scope="col">Judul</th>
+                <th scope="col">Penulis</th>
+                <th scope="col">Jumlah Halaman</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Tahun Terbit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Laut Bercerita</th>
+                <td>Leila S. Chudori</td>
+                <td>379 halaman</td>
+                <td>Fiksi Histori</td>
+                <td>2017</td>
+              </tr>
+              <tr>
+                <th scope="row">3726 mdpl</th>
+                <td>Nurwina Sari</td>
+                <td>280 halaman</td>
+                <td>Romance</td>
+                <td>2024</td>
+              </tr>
+              <tr>
+                <th scope="row">Pulang</th>
+                <td>Tere Liye</td>
+                <td>400 halaman</td>
+                <td> Fiksi Aksi,Petualangan</td>
+                <td>2015</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+    <div class = "galeri">
   
-  <figure>
+  <figure class="kartu">
     <img src="Laut Bercerita.webp"
        alt="gambar-Buku Laut Bercerita"
        width="400" height="600" loading="lazy">
@@ -97,21 +101,7 @@
      Selain itu, terdapat pesan yang menggambarkan semangat perjuangan dan kebebasan yang diusung oleh para aktivis muda.</figcaption>
   </figure>
 
-  <figure>
-     <img src="3726 mdpl.webp"
-       alt="gambar-Buku 3726 mdpl"
-       width="500" height="584" loading="lazy">
-    <figcaption>Novel 3726 MDPL adalah buku karya Nurwina Sari yang diterbitkan pertama kali pada tahun 2024 dengan 280 halaman. 
-     Buku 3726 mdpl ini menceritakan tentang perjalanan cinta dalam diam antara Rangga Raja dan Anindi Hangura selama 4 tahun.
-     Di sisi lain, Andini menjalani hari-harinya tanpa menyadari perasaan Rangga karena ia sendiri juga masih terjebak dalam bayang-bayang 
-     masa lalu yang belum usai. Hubungan keduanya mulai mengalami titik balik ketika Rangga memutuskan untuk mendaki Gunung Rinjani. 
-     Dari puncak tertinggi pulau Lombok tersebut, pada ketinggian 3726 meter di atas permukaan laut (mdpl), Rangga mengirimkan ucapan ulang tahun
-     untuk Anindi. Kisah yang awalnya sangat populer sebagai Alternative Universe (AU) di platform X (Twitter) ini memadukan romansa masa kuliah 
-     dengan petualangan alam yang megah. Melalui latar Gunung Rinjani, novel ini menggambarkan bahwa mencintai seseorang terkadang seperti 
-     mendaki gunung yang tinggi, penuh perjuangan, melelahkan.</figcaption>
-  </figure>
-
-  <figure>
+  <figure class="kartu">
      <img src="Pulang.webp"
        alt="gambar-Buku Pulang"
        width="400" height="600" loading="lazy">
@@ -122,8 +112,18 @@
      dengan kehidupan sehari-hari.Novel Pulang juga cocok dijadikan sebagai bahan untuk membuat resensi.
     </figcaption>
   </figure>
-
+  </div>
+  </div>
+  </section>
+<div class = "sisi">
 <section id="bagian-2">
+      <h2>Tentang MyLibrary</h2>
+      <p>MyLibrary adalah salah satu web Browser yang berisikan koleksi buku yang dimiliki oleh seorang mahasiswi bernama Nurrahmatia, yang sekarang sedang menempuh pendidikan
+        di perguruan tinggi swasta yang ada di Yogyakarta. Nama MyLibrary itu sendiri berarti 'perpustakaanku' yang terinspirasi oleh jumlah koleksi buku yang dimiliki.</p>
+        <p>Happy Reading All</p>
+</section>
+
+<section id="bagian-3">
   <h2>Cari Buku</h2>
   <form action="/simpan" method="post">
     <p>
@@ -135,24 +135,19 @@
       <input type="text" id="Penulis" name="kolom-penulis" required>
     </p>
     <p>
-      <label for="Tahun Terbit">Tahun Terbit</label>
-      <input type="number" id="Tahun Terbit" name="kolom-tahun terbit" required>
+      <label for="Tahun-Terbit">Tahun Terbit</label>
+      <input type="number" id="Tahun-Terbit" name="kolom-tahun terbit" required>
     </p>
     <button type="submit">Simpan</button>
   </form>
   </section>
-
-<section id="bagian-3">
-      <h2>Tentang MyLibrary</h2>
-      <p>MyLibrary adalah salah satu web Browser yang berisikan koleksi buku yang dimiliki oleh seorang mahasiswi bernama Nurrahmatia, yang sekarang sedang menempuh pendidikan
-        di perguruan tinggi swasta yang ada di Yogyakarta. Nama MyLibrary itu sendiri berarti 'perpustakaanku' yang terinspirasi oleh jumlah koleksi buku yang dimiliki.</p>
-      <p>Happy Reading All</p>
-</section>
+</div>
 </main>
+
 
 <footer>
     <p>Nurrahmatia · 25523131 · 2026</p>
   </footer>
-</div>
+  </div>
 </body>
 </html>

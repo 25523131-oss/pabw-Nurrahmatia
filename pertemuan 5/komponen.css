@@ -28,7 +28,22 @@ button {
   cursor: pointer;
 }
 
-.header-baris {
+:focus-visible {
+  outline: 2px solid var( --color-focus);
+  outline-offset: 2px;
+}
+ 
+/* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
+input:user-invalid {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+ 
+/* Pesan galat: sembunyikan selama belum tidak-sah, tampilkan saat perlu */
+.pesan-galat       { display: none; color: var(--color-danger); font-size: var(--text-sm); }
+.form-kolom:has(input:user-invalid) .pesan-galat { display: block;}
+
+.galeri {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: var(--space-4);
@@ -40,3 +55,9 @@ button {
   justify-content: space-between;
   gap: var(--space-2);
 }
+
+.sorotan { grid-column: span 2; }
+.papan    { grid-row: span 2; }
+.kartu__isi { min-width: 0; }
+.kartu__judul { overflow-wrap: anywhere; }
+

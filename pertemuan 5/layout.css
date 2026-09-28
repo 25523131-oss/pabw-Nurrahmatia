@@ -50,7 +50,6 @@ main {
 }
  
 footer {
-  margin-top: var(--space-6);
   padding-block: var(--space-4);
   border-top: 1px solid var(--color-border);
   color: var(--color-fg);       /* hindari abu pucat yang gagal kontras */
@@ -69,9 +68,20 @@ footer {
   align-items: center;
 }
 
-.main {
+/* .isi{
   display: grid;
   grid-template-columns: 16rem 1fr;
-  gap: var(--space-6);
+  grid-template-areas: 
+  "sisi utama"
+  "sisi bawah"; } */
+
+
+.sisi {grid-area: sisi;}
+.utama {grid-area: utama;}
+
+.galeri .kartu {
+  display: grid;
+  align-content: start;
+  min-height: 14rem;
 }
 
