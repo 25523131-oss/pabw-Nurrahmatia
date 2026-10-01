@@ -12,10 +12,25 @@
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
   }
 }
- 
+
 /* CSS */
 .pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
- 
+
+.tombol-tema {
+  display: inline-block;
+  margin-bottom: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+/* checkbox tersembunyi tetap bisa difokus lewat papan ketik */
+.pengalih-tema:focus-visible + .tombol-tema {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
 /* Pilihan manual HARUS berada setelah blok media query,
    supaya menang saat keduanya menyala bersamaan. */
 :root:has(#tema:checked) {
@@ -27,4 +42,5 @@
   --color-danger:  var(--palet-warna-7);
   --color-prim-fg: var(--palet-warna-4);
   --color-focus:   var(--palet-warna-2);
+  --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
 }

@@ -1,14 +1,20 @@
 .form-kolom {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);          /* jarak label ke isian, seragam */
+  gap: var(--space-1);          /* jarak label ke isian, seragam */
 }
- 
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+} */
+
 label {
   font-size: var(--text-sm);
   font-weight: 600;
 }
- 
+
 input, select, textarea {
   font: inherit;                /* kolom isian ikut ukuran huruf halaman */
   padding: var(--space-2) var(--space-3);
@@ -17,7 +23,7 @@ input, select, textarea {
   background: var(--color-surface);
   color: var(--color-fg);
 }
- 
+
 button {
   font: inherit;
   padding: var(--space-2) var(--space-4);
@@ -29,23 +35,23 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var( --color-focus);
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
- 
+
 /* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
 input:user-invalid {
   border-color: var(--color-danger);
   border-width: 2px;
 }
- 
+
 /* Pesan galat: sembunyikan selama belum tidak-sah, tampilkan saat perlu */
 .pesan-galat       { display: none; color: var(--color-danger); font-size: var(--text-sm); }
-.form-kolom:has(input:user-invalid) .pesan-galat { display: block;}
+.form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
 
 .galeri {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));  /* perbaikan: "ifr" -> "1fr" */
   gap: var(--space-4);
 }
 
@@ -60,4 +66,3 @@ input:user-invalid {
 .papan    { grid-row: span 2; }
 .kartu__isi { min-width: 0; }
 .kartu__judul { overflow-wrap: anywhere; }
-

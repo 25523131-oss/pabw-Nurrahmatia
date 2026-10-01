@@ -81,6 +81,5 @@ bagian yang dibantu AI :
 
 - berkas yang saya buat : berkas responsife.css  
 
-## Catatan Penggunaan AI :
-bagian yang dibantu AI :
--
+- bagian yang tidak terselesaikan : saat  layar 360px layar masih dapat di gulir secara horizontal, dikarenakan ukuran form terlalu panjang
+
