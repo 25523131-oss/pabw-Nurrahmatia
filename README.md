@@ -8,11 +8,11 @@ Topik halaman saya: koleksi buku di rak saya.
 
 - Judul halaman: MyLibrary
 - Deskripsi: Daftar buku yang saya miliki beserta status bacanya.
-- Tautan navigasi: Koleksi Buku, Form Buku, Tentang MyLibrary
-- Dua bagian utama: Koleksi Buku, Form Buku
+- Tautan navigasi: Koleksi Buku, Tentang MyLibrary, Cari Buku
+- Dua bagian utama: Koleksi Buku, Cari Buku
 - Kolom tabel: judul, penulis, jumlah halaman, genre, tahun terbit
 - Kolom form: judul, penulis, tahun terbit
-- Gambar: 3726 mdpl.webp, Laut Bercerita.webp, Pulang.webp
+- Gambar: Laut Bercerita.webp dan Pulang.webp
 
 ## Catatan penggunaan AI
 
@@ -32,15 +32,14 @@ semuanya, kecuali yang paparkan diatas.
 
 ### Token yang saya tetapkan 
 |--palet-warna-1: | #39270c; | warna backround tema gelap
-|--palet-warna-2: | #e1a72a; | warna tombol, dan warna kartu 
+|--palet-warna-2: | #e1a72a; | warna tombol, warna kartu,  dan warna garis fokus
 |--palet-warna-3: | #fbf0d9; | warna backround tema terang
 |--palet-warna-4: | #1c1917; | warna font saat tema terang
-|--palet-warna-5: | #FFFFFF; |warna font pada batton simpan saat tema terang
+|--palet-warna-5: | #FFFFFF; |warna font pada batton cari saat tema terang
 |--palet-warna-6: | #e8d9bc; | warna font pada button simpan saat tema gelap
 |--palet-warna-7: | #ff0000; | warna tanda apabila kolom form telah diketik dan dihapus kemabali
-
  
-  --space-1: 0.25rem; |
+  --space-1: 0.25rem; | 
   --space-2: 0.8rem; |
   --space-3: 0.85rem; |
   --space-4: 1rem; |
@@ -55,14 +54,33 @@ semuanya, kecuali yang paparkan diatas.
   --text-xl:  1.5rem; |
   --text-3xl: 2.25rem; |
 
-Kriteria selesai saya : mengubah --color primary di satu sisi baris dan juga harus mengubah warrna tombol, tautan, judul, dan garis fokus.
+Kriteria selesai saya : mengubah --color primary di satu sisi baris dan juga harus mengubah warna tombol, tautan, judul, dan garis fokus.
 
 ## Catatan penggunaan AI
-mencari warna, mencari nilai contras ratio, mencari penyebab error dari kode 
+bagian yan dibantu AI :
+- mencari warna
+- mencari nilai contras rasio 
+- mencari penyebab error dari kode
+- mencari arti istilah-istilah baru 
 
 ## Pertemuan 5 - Flexbox dan Grid
 
-- berkas yang saya buat : membuat flexbox dan grid di halaman website dan menambahkan kartu di setiap gambar yang ada,menambahkan sidebar pada halaman. 
+- membuat flexbox dan grid di halaman website
+- menambahkan kartu di setiap gambar yang ada
+- menambahkan sidebar pada halaman
+- saya juga mengahapus satu gambar buku saya.
 
 ## Catatan penggunaan AI
-mencari bentuk layout flexbox dan grid, mencari bentuk sidebar, serta mencari div dan selection mana yang belum sempat ditutup.
+bagian yang dibantu AI : 
+- mencari bentuk layout flexbox dan grid
+- mencari bentuk sidebar
+- serta mencari div dan selection mana yang belum sempat ditutup.
+- mencari
+
+## Pertemuan 6 Responsife mobile-first
+
+- berkas yang saya buat : berkas responsife.css  
+
+## Catatan Penggunaan AI :
+bagian yang dibantu AI :
+-
