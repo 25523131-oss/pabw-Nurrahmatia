@@ -1,0 +1,1 @@
+console.log("Halo, skrip sudah terhubung!");
