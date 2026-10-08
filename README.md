@@ -81,4 +81,17 @@ bagian yang dibantu AI :
 
 - berkas yang saya buat : berkas responsife.css  
 
-- bagian yang tidak terselesaikan : saat  layar 360px layar masih dapat di gulir secara horizontal, dikarenakan ukuran form terlalu panjang 
+- bagian yang tidak terselesaikan : saat  layar 360px layar masih dapat di gulir secara horizontal, dikarenakan ukuran form terlalu panjang.
+
+## Pertemuan 8 JavaScript
+
+- berkas yang saya buat : folder js yang berisikan app.js utnuk menampung file JavaScript
+- Menambahan variabel window agar dapat dipanggil langsung di consoler
+- Hanya melakukan Git lebih dari satu tetapi tidak menjelaskan commitnya 
+- Menambahkan variabel 'window' sehingga variabel nya dapat langsung dipanggil di console
+
+
+## Catatan penggunaan AI :
+- cara untuk mengatasi galat 
+- mencari arti Cannot read properties of null pada baris yang memakai querySelector. 
+- membantu mengartikan beberapa kalimat yang kurang dipahami
