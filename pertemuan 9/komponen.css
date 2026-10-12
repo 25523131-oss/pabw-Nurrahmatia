@@ -62,6 +62,12 @@ input:user-invalid {
   gap: var(--space-2);
 }
 
+.filter {
+  display: flex;
+  gap: 12px; /* Memberikan jarak antar tombol */
+  margin: 20px; /* Jarak bawah ke elemen galeri buku */
+}
+
 .sorotan { grid-column: span 2; }
 .papan    { grid-row: span 2; }
 .kartu__isi { min-width: 0; }
