@@ -1,3 +1,5 @@
+
+
 //POIN B
 const nama = "Tia";           // teks
 const jumlahProyek = 3;       // angka, bukan "3"
@@ -21,16 +23,21 @@ const profil = {
 
 //POIN BAGIAN D
 const daftarProyek = [
-  { judul: "Halaman Profil",
-     tahun: 2026, 
-     selesai: true },
+  { judul: "Laut Bercerita",
+    penulis: "Leila S. Chudori",
+    tahun: 2017 },
 
-  { judul: "Katalog Produk", 
-    tahun: 2026, 
-    selesai: false },
+  { judul: "Pulang",
+    penulis: "Tere Liye",
+    tahun: 2015 },
+
+  {judul: "Pergi",
+   penulis: "Tere Liye",
+   tahun: 2018}
 ];
 
 window.profil = profil
+window.daftarProyek = daftarProyek;
 
 const kalimat = `Nama saya ${profil.nama}, dan saya memiliki  ${profil.keahlian.length} keahlian.`;
 
