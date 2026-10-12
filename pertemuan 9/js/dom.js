@@ -8,7 +8,6 @@ function buatKartu(proyek) {
 }
 
 function render(daftarProyek) {
-  // 1. KUNCI PENCEGAH PENUMPUKAN: Kosongkan wadah terlebih dahulu
   wadah.textContent = ""; 
   daftarProyek.forEach((proyek) => wadah.append(buatKartu(proyek)));
 
