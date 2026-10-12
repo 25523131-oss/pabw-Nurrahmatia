@@ -95,3 +95,14 @@ bagian yang dibantu AI :
 - cara untuk mengatasi galat 
 - mencari arti Cannot read properties of null pada baris yang memakai querySelector. 
 - membantu mengartikan beberapa kalimat yang kurang dipahami
+
+## Pertemuan 9 DOM, Event, dan Interaktivitas
+
+- membuat berkas dom.js
+- mengikuti alur dari ws secara berurutan  
+
+## Catatan penggunaan AI
+- membantu menambahkan galat saat form di isi spasi
+- membantu memperbaiki beberapa kode yang error
+- membantu memberikan pemahaman tentang apa yang dimaksud oleh wroksheet
+- membantu memperbaiki form dan yang tidak merespon
