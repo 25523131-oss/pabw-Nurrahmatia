@@ -25,14 +25,17 @@ const profil = {
 const daftarProyek = [
   { judul: "Laut Bercerita",
     penulis: "Leila S. Chudori",
+    genre: "Fiksi Histori",
     tahun: 2017 },
 
   { judul: "Pulang",
     penulis: "Tere Liye",
+    genre: "Fiksi Aksi",
     tahun: 2015 },
 
   {judul: "Pergi",
    penulis: "Tere Liye",
+   genre: "Petualangan",
    tahun: 2018}
 ];
 
