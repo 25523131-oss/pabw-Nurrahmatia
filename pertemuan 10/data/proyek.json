@@ -5,7 +5,8 @@
     "penulis": "Leila S. Chudori",
     "halaman": 379,
     "genre": "Fiksi Histori",
-    "tahun": 2017
+    "tahun": 2017,
+    "tersedia": true
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "penulis": "Tere Liye",
     "halaman": 400,
     "genre": "Fiksi Aksi",
-    "tahun": 2015
+    "tahun": 2015,
+    "tersedia": true
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "penulis": "Tere Liye",
     "halaman": 459,
     "genre": "Petualangan",
-    "tahun": 2018
+    "tahun": 2018,
+    "tersedia": true
   }
 ]
