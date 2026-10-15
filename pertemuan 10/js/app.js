@@ -1,4 +1,5 @@
 import { ambilProyek } from './api.js';
+import { render, pasangFilter, aturMemuat, tampilkanGalat } from './dom.js';
 
 //POIN B
 // const nama = "Tia";           // teks
@@ -80,30 +81,18 @@ import { ambilProyek } from './api.js';
 //  window.selesai = selesai
 //  window.katalog = katalo
 
-const galeriGambar = document.querySelector('.galeri');
-    if (galeriGambar) {
-      galeriGambar.hidden = true; // atau galeriGambar.style.display = 'none';
-    }
-
-    const pembungkusTabel = document.querySelector('.table-wrap');
-    if (pembungkusTabel) {
-      pembungkusTabel.hidden = true;
-    }
-
-async function muatAplikasi() {
+async function muat() {
+  aturMemuat(true); 
   try {
-    const daftar = await ambilProyek();
-    console.log(daftar);
-    
+    const daftar = await ambilProyek(); 
+    pasangFilter(daftar); 
+    render(daftar); 
   } catch (galat) {
-    console.error('galat ditemukan', galat.message);
-    
-    const wadahPesan = document.querySelector('#pesan-kosong') || document.querySelector('p');
-    if (wadahPesan) {
-      wadahPesan.textContent = `galat ditangkap ditemukan ${galat.message}`;
-      wadahPesan.hidden = false;
-    }
+    tampilkanGalat('Data gagal dimuat. Periksa koneksi, lalu muat ulang halaman.');
+    console.error(galat.message); 
+  } finally {
+    aturMemuat(false);
   }
 }
 
-muatAplikasi();
+muat();

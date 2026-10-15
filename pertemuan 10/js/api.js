@@ -2,6 +2,7 @@ const ALAMAT = 'data/proyek.json';
 
 export async function ambilProyek() {
   try {
+    await new Promise(r => setTimeout(r, 10000)); 
     const respons = await fetch(ALAMAT);
     if (!respons.ok) throw new Error('status ' + respons.status);
     const data = await respons.json();
