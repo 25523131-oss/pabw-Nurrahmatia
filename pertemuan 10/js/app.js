@@ -78,6 +78,32 @@ import { ambilProyek } from './api.js';
 // console.log(katalog);
 
 //  window.selesai = selesai
-//  window.katalog = katalog
+//  window.katalog = katalo
 
-ambilProyek().then((daftar) => console.log(daftar));
+const galeriGambar = document.querySelector('.galeri');
+    if (galeriGambar) {
+      galeriGambar.hidden = true; // atau galeriGambar.style.display = 'none';
+    }
+
+    const pembungkusTabel = document.querySelector('.table-wrap');
+    if (pembungkusTabel) {
+      pembungkusTabel.hidden = true;
+    }
+
+async function muatAplikasi() {
+  try {
+    const daftar = await ambilProyek();
+    console.log(daftar);
+    
+  } catch (galat) {
+    console.error('galat ditemukan', galat.message);
+    
+    const wadahPesan = document.querySelector('#pesan-kosong') || document.querySelector('p');
+    if (wadahPesan) {
+      wadahPesan.textContent = `galat ditangkap ditemukan ${galat.message}`;
+      wadahPesan.hidden = false;
+    }
+  }
+}
+
+muatAplikasi();
