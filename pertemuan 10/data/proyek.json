@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "judul": "Laut Bercerita",
+    "penulis": "Leila S. Chudori",
+    "halaman": 379,
+    "genre": "Fiksi Histori",
+    "tahun": 2017
+  },
+  {
+    "id": 2,
+    "judul": "Pulang",
+    "penulis": "Tere Liye",
+    "halaman": 400,
+    "genre": "Fiksi Aksi",
+    "tahun": 2015
+  },
+  {
+    "id": 3,
+    "judul": "Pergi",
+    "penulis": "Tere Liye",
+    "halaman": 459,
+    "genre": "Petualangan",
+    "tahun": 2018
+  }
+]

@@ -5,7 +5,6 @@ Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web.
 ## Pertemuan 3 - Halaman profil saya
 
 Topik halaman saya: koleksi buku di rak saya.
-
 - Judul halaman: MyLibrary
 - Deskripsi: Daftar buku yang saya miliki beserta status bacanya.
 - Tautan navigasi: Koleksi Buku, Tentang MyLibrary, Cari Buku
@@ -15,7 +14,6 @@ Topik halaman saya: koleksi buku di rak saya.
 - Gambar: Laut Bercerita.webp dan Pulang.webp
 
 ## Catatan penggunaan AI
-
 Bagian yang dibantu AI : 
 - mencari ukuran gambar untuk web Broeser
 - mencari sinopsis dari buku
@@ -64,7 +62,6 @@ bagian yan dibantu AI :
 - mencari arti istilah-istilah baru 
 
 ## Pertemuan 5 - Flexbox dan Grid
-
 - membuat flexbox dan grid di halaman website
 - menambahkan kartu di setiap gambar yang ada
 - menambahkan sidebar pada halaman
@@ -75,12 +72,10 @@ bagian yang dibantu AI :
 - mencari bentuk layout flexbox dan grid
 - mencari bentuk sidebar
 - serta mencari div dan selection mana yang belum sempat ditutup.
-- mencari
 
 ## Pertemuan 6 Responsife mobile-first
 
 - berkas yang saya buat : berkas responsife.css  
-
 - bagian yang tidak terselesaikan : saat  layar 360px layar masih dapat di gulir secara horizontal, dikarenakan ukuran form terlalu panjang.
 
 ## Pertemuan 8 JavaScript
@@ -89,7 +84,6 @@ bagian yang dibantu AI :
 - Menambahan variabel window agar dapat dipanggil langsung di consoler
 - Hanya melakukan Git lebih dari satu tetapi tidak menjelaskan commitnya 
 - Menambahkan variabel 'window' sehingga variabel nya dapat langsung dipanggil di console
-
 
 ## Catatan penggunaan AI :
 - cara untuk mengatasi galat 
@@ -106,3 +100,12 @@ bagian yang dibantu AI :
 - membantu memperbaiki beberapa kode yang error
 - membantu memberikan pemahaman tentang apa yang dimaksud oleh wroksheet
 - membantu memperbaiki form dan yang tidak merespon
+
+## Pertemuan 10 JavaScript Asinkron: fetch, Promise, dan JSON
+- Membuat folder data yang mengisikan proyek.json
+- Membuat berkas api.js 
+- Mengikuti alur dari ws secara berurutan
+- 
+
+## Catatan penggunaan AI 
+- 
