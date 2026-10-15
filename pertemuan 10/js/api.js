@@ -1,8 +1,7 @@
-const ALAMAT = 'https://raw.githubusercontent.com/25523131-oss/pabw-Nurrahmatia/refs/heads/main/pertemuan%2010/js/api.js';
+const ALAMAT = 'https://raw.githubusercontent.com/25523131-oss/pabw-Nurrahmatia/refs/heads/main/pertemuan%2010/data/proyek.json';
 
 export async function ambilProyek() {
   try {
-    await new Promise(r => setTimeout(r, 10000)); 
     const respons = await fetch(ALAMAT);
     if (!respons.ok) throw new Error('status ' + respons.status);
     const data = await respons.json();

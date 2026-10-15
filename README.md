@@ -105,7 +105,10 @@ bagian yang dibantu AI :
 - Membuat folder data yang mengisikan proyek.json
 - Membuat berkas api.js 
 - Mengikuti alur dari ws secara berurutan
-- 
+
 
 ## Catatan penggunaan AI 
-- 
+- Membantu dalam mencari solusi untuk galat
+- Membantu dalam memperbaiki modularitas struktur kode
+- Membantu menjelaskan lebih lanjut tentang elemen-elemen yang dalam materi
+- Membantu dalam menjelaskan tentang perintah dari worksheet. 
