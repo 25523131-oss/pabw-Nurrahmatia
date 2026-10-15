@@ -1,4 +1,4 @@
-const ALAMAT = 'data/proyek.json';
+const ALAMAT = 'https://raw.githubusercontent.com/25523131-oss/pabw-Nurrahmatia/refs/heads/main/pertemuan%2010/js/api.js';
 
 export async function ambilProyek() {
   try {
