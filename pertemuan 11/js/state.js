@@ -1,4 +1,3 @@
-// js/state.js
 import { render } from './dom.js';
 
 const KUNCI = "pabw-p11";
