@@ -1,0 +1,112 @@
+.form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);          /* jarak label ke isian, seragam */
+  max-width: 30rem;
+}
+
+ /* form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}  */
+
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+input, select, textarea {
+  font: inherit;                /* kolom isian ikut ukuran huruf halaman */
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+}
+
+button {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-prim-fg);
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+input:user-invalid {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+/* Pesan galat: sembunyikan selama belum tidak-sah, tampilkan saat perlu */
+.pesan-galat       { display: none; color: var(--color-danger); font-size: var(--text-sm); }
+.form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));  /* perbaikan: "ifr" -> "1fr" */
+  gap: var(--space-4);
+}
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.filter {
+  display: flex;
+  gap: var(--space-2); 
+  margin-bottom: var(--space-2); 
+  flex-wrap: wrap; 
+}
+
+.filter button {
+  background-color: var(--color-surface);
+  color: var(--color-fg);
+  border: 1px solid var(--color-border);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+}
+
+.filter button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-prim-fg);
+  border-color: var(--color-primary);
+}
+
+.filter button.aktif {
+  background-color: var(--color-primary);
+  color: var(--color-prim-fg);
+  border-color: var(--color-primary);
+  font-weight: bold;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#pesan-kosong {
+  grid-column: 1 / -1; 
+  text-align: center;
+  padding: var(--space-6);
+  font-size: var(--text-md);
+  font-style: italic;
+  color: var(--color-fg);
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.sorotan { grid-column: span 2; }
+.papan    { grid-row: span 2; }
+.kartu__isi { min-width: 0; }
+.kartu__judul { overflow-wrap: anywhere; }

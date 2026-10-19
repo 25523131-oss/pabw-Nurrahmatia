@@ -1,4 +1,3 @@
-
 const wadah = document.querySelector(".galeri.grid");
 const kosong = document.querySelector("#pesan-kosong");
 const pesanGalatWadah = document.querySelector("#pesan-galat");
