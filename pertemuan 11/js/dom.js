@@ -142,7 +142,7 @@
 
 import { saring } from './data.js';
 
-const wadah = document.querySelector(".galeri.grid");
+const wadah = document.querySelector(".galeri.grid"); 
 const kosong = document.querySelector("#pesan-kosong");
 const pesanGalatWadah = document.querySelector("#pesan-galat");
 
@@ -166,34 +166,33 @@ export function buatKartu(proyek, favorit = []) {
   figcaption.appendChild(h2);
 
   const p = document.createElement("p");
-  p.textContent = `${proyek.penulis} - ${proyek.genre} (${proyek.tahun})`;
+  p.textContent = ` ${proyek.sinopsis} ${proyek.penulis} - ${proyek.genre} (${proyek.tahun})`;
   figcaption.appendChild(p);
 
-  // Tambahan Tombol Favorit (Lembar C)[cite: 3]
   const tombolFav = document.createElement("button");
   tombolFav.className = "favorit";
   tombolFav.dataset.id = proyek.id;
-  tombolFav.textContent = favorit.includes(proyek.id) ? "★" : "☆";
+  const isFavorit = favorit.includes(Number(proyek.id)) || favorit.includes(proyek.id);
+  tombolFav.textContent = favorit.includes(proyek.id) ? "★ Favorit" : "☆ Masukan ke favorit";
   figcaption.appendChild(tombolFav);
 
   figure.appendChild(figcaption);
   return figure;
 }
 
-// render sekarang menerima objek state (Lembar C)
 export function render(state) {
   if (!wadah) return;
-  wadah.textContent = ""; // 1. Kosongkan wadah
+  wadah.textContent = ""; 
 
-  const tampil = saring(state.daftarProyek, state.kategoriAktif); // Ambil data tersaring dari data.js[cite: 1]
+  const tampil = saring(state.daftarProyek, state.kategoriAktif);
 
   if (tampil.length === 0) {
-    if (kosong) kosong.hidden = false; // 2. Keadaan kosong[cite: 1]
+    if (kosong) kosong.hidden = false; 
     return;
   }
   if (kosong) kosong.hidden = true;
   
-  tampil.forEach((item) => wadah.append(buatKartu(item, state.favorit))); // 3. Isi ulang[cite: 1]
+  tampil.forEach((item) => wadah.append(buatKartu(item, state.favorit))); 
   tandaiTombolAktif(state.kategoriAktif);
 }
 
@@ -217,3 +216,4 @@ function tandaiTombolAktif(kategoriAktif) {
     tombol.classList.toggle("aktif", tombol.dataset.kategori === kategoriAktif);
   });
 }
+
