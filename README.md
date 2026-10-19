@@ -112,3 +112,13 @@ bagian yang dibantu AI :
 - Membantu dalam memperbaiki modularitas struktur kode
 - Membantu menjelaskan lebih lanjut tentang elemen-elemen yang dalam materi
 - Membantu dalam menjelaskan tentang perintah dari worksheet. 
+
+## Pertemuan 11 Modul, State, dan Penyimpanan Klien
+- Membuat berkas events.js, state.js, data.js
+- Melakukan eksport dan import kode sehingga 1 file 1 tanggung jawab
+- Menambahkan button 'atur ulang' dan tombol tambah favorit
+
+## Catatan penggunaan AI
+- Membantu dalam menangani galat yang muncul
+- Membantu dalam menjelaskan tentang perintah dari worksheet. 
+- Membantu menghubungkan remote github, dan menghubungkan node.js di git bush
