@@ -10,7 +10,6 @@ export const state = {
   favorit: []
 };
 
-// Fungsi untuk menyimpan state ke localStorage 
 export function simpan(stateObj) {
   const isi = { 
     versi: VERSI,                  
@@ -20,7 +19,6 @@ export function simpan(stateObj) {
   localStorage.setItem(KUNCI, JSON.stringify(isi));
 }
 
-// Fungsi untuk memuat data dengan penanganan skema versi & try/catch 
 export function muat() {
   try { 
     const isi = JSON.parse(localStorage.getItem(KUNCI)); 
@@ -34,15 +32,13 @@ export function muat() {
     return null; 
   }        
 }
-
-// Memulihkan data simpanan saat aplikasi pertama kali berjalan 
+ 
 export function pulihkan(isi) {   
   if (!isi) return;               
   state.kategoriAktif = isi.kategoriAktif ?? "semua";
   state.favorit = isi.favorit ?? [];
 }
 
-// Tombol atur ulang untuk mereset simpanan 
 export function aturUlang() {
   localStorage.removeItem(KUNCI);
   state.kategoriAktif = 'semua';
@@ -57,14 +53,12 @@ export function isiProyek(daftar) {
   render(state);
 }
 
-// Fungsi pengubah untuk kategori aktif 
 export function pilihKategori(kategori) {
   state.kategoriAktif = kategori;
   simpan(state);
   render(state);
 }
 
-// Fungsi pengubah untuk menambah/menghapus daftar favorit (Lembar C)[cite: 3]
 export function tambahFavorit(id) {
   if (state.favorit.includes(id)) {
     state.favorit = state.favorit.filter(favId => favId !== id); // Opsional: toggle favorit
