@@ -1,23 +1,14 @@
 <script setup> 
   import { ref, onMounted } from 'vue'
   import { ambilProyek } from './api.js'
+  import { profil } from './data.js'
 
-  const daftarProyek = ref([])
-  const kategoriAktif = ref('semua')
-  const favorit = ref([])
-  const sedangMemuat = ref(true) 
-  const pesanGalat = ref('')
+  import KepalaProfil from './components/KepalaProfil.vue'
+  import TombolFilter from './components/TombolFilter.vue'
+  import DaftarProyek from './components/DaftarProyek.vue'
+  import FormKontak from './components/FormKontak.vue'
 
-  onMounted(async () => {
-    sedangMemuat.value = true
-  try {
-    daftarProyek.value = await ambilProyek()
-  } catch (err) {
-    pesanGalat.value = 'Data gagal dimuat. Periksa koneksi, lalu muat ulang.'
-  }
-  })
-
-  </script>
+</script>
 
 <template>
 <div class="page">
@@ -38,36 +29,9 @@
     </header>
 
     <main class="isi content">
-
         <div class="sisi">
-          <section id="bagian-2">
-            <h2>Tentang MyLibrary</h2>
-            <p>MyLibrary adalah salah satu web Browser yang berisikan koleksi buku yang dimiliki oleh seorang mahasiswi bernama Nurrahmatia, yang sekarang sedang menempuh pendidikan
-              di perguruan tinggi swasta yang ada di Yogyakarta. Nama MyLibrary itu sendiri berarti 'perpustakaanku' yang terinspirasi oleh jumlah koleksi buku yang dimiliki.</p>
-            <p>Happy Reading All</p>
-          </section>
-
-          <section id="bagian-3">
-            <h2>Cari Buku</h2>
-            <form action="/simpan" method="post">
-              <div class="form-kolom">
-                <label for="Judul">Judul</label>
-                <input type="text" id="Judul" name="kolom-judul" required>
-                <span class="pesan-galat">Judul wajib diisi.</span>
-              </div>
-              <div class="form-kolom">
-                <label for="Penulis">Penulis</label>
-                <input type="text" id="Penulis" name="kolom-penulis" required>
-                <span class="pesan-galat">Penulis wajib diisi.</span>
-              </div>
-              <div class="form-kolom">
-                <label for="Tahun-Terbit">Tahun Terbit</label>
-                <input type="number" id="Tahun-Terbit" name="kolom-tahun-terbit" required>
-                <span class="pesan-galat">Tahun terbit wajib diisi dengan angka.</span>
-              </div>
-              <button type="submit">Cari</button>
-            </form>
-          </section>
+          <KepalaProfil :profil="profil" />
+          <FormKontak />
         </div>
 
         <div class="utama">
@@ -113,61 +77,10 @@
             </div>
           </section>
 
-          <div class= "filter">
-              <button data-kategori="semua" class="aktif">Semua</button>
-              <button data-kategori="Fiksi Histori">Fiksi Histori</button>
-              <button data-kategori="Petualangan">Petualangan</button>
-              <button data-kategori="Romance">Romance</button>
-            </div>
-
-            <button id="atur-ulang">Atur ulang</button>
-            <p id="pesan-kosong" hidden>Tidak ada buku yang ditemukan dalam kategori ini.</p>
-            <p id="pesan-galat" hidden>Pesan gagal dimuat.</p>
-
-          <div class="galeri grid">
-            <figure class="kartu">
-              <img src="./assets/Laut Bercerita.webp" alt="Buku Laut Bercerita" width="400" height="600" loading="lazy">
-              <figcaption class="kartu__isi">
-                <h2>Laut Bercerita</h2>
-                Laut Bercerita adalah novel fiksi sejarah karya Leila S. Chudori yang diterbitkan pertama kali pada Oktober 2017
-                oleh Kepustakaan Populer Gramedia (KPG), serta telah diadaptasi menjadi film pendek berdurasi 30 menit pada tahun 2017
-                dan diterjemahkan ke dalam bahasa Inggris dengan judul The Sea Speaks His Name (2020).
-                Buku Laut Bercerita ini menceritakan tentang sudut pandang seorang Biru Laut. Ia adalah seorang mahasiswa
-                program studi Sastra Inggris di Universitas Gadjah Mada, Yogyakarta. Laut memiliki ketertarikan terhadap dunia sastra dan tulisan
-                karena turun dari ayahnya yang merupakan seorang wartawan Harian Solo.
-                Laut memiliki banyak koleksi buku sastra klasik, baik dalam bahasa Indonesia maupun bahasa Inggris. Saat itu, beberapa buku sempat
-                dilarang peredarannya oleh pemerintah karena dianggap membahayakan, termasuk buku-buku karya penulis Pramoedya Ananta Toer.
-                Buku Laut Bercerita ini mengajak pembaca untuk merenungkan masa lalu yang penuh dengan kepahitan dan kekejaman.
-                Selain itu, terdapat pesan yang menggambarkan semangat perjuangan dan kebebasan yang diusung oleh para aktivis muda.
-              </figcaption>
-            </figure>
-
-            <figure class="kartu">
-              <img src="./assets/Pulang.webp" alt="Buku Pulang" width="400" height="600" loading="lazy">
-              <figcaption class="kartu__isi">
-                <h2>Pulang</h2>
-                Buku Novel Pulang karya Tere Liye diterbitkan pada tahun 2015 oleh penerbit Jakarta Republika dengan 400 halaman. Novel Pulang ini
-                menceritakan tentang petualangan hidup remaja berusia 15 tahun yang mengalami kesulitan di hutan Rimba Sumatra, remaja tersebut memiliki kemampuan hebat dalam berburu babi hutan.
-                Hal itu membuat Teuku Muda terkesan, Bapak tua itu kemudian membawanya ke kota untuk diasuh layaknya anak angkat. Tokoh utama dalam sinopsis novel Pulang bernama Bujang.
-                Cerita dalam novel ini dibawakan dengan alur menarik dan kompleks. Melalui tokoh utama dan karakter lain, novel Pulang memuat pesan moral yang dekat
-                dengan kehidupan sehari-hari. Novel Pulang juga cocok dijadikan sebagai bahan untuk membuat resensi.
-              </figcaption>
-            </figure>
-
-            <figure class="kartu">
-              <img src="./assets/Pergi.webp" alt="Buku Pergi" width="400" height="600" loading="lazy">
-              <figcaption class="kartu__isi">
-                <h2>Pergi</h2>
-                Buku Novel Pergi karya Tere Liye diterbitkan pada tahun 2018 oleh penerbit Jakarta Republika dengan 459 halaman. Novel Pergi ini
-                menceritakan tentang petualangan hidup remaja berusia 15 tahun yang mengalami kesulitan di hutan Rimba Sumatra, remaja tersebut memiliki kemampuan hebat dalam berburu babi hutan.
-                Hal itu membuat Teuku Muda terkesan, Bapak tua itu kemudian membawanya ke kota untuk diasuh layaknya anak angkat. Tokoh utama dalam sinopsis novel Pulang bernama Bujang.
-                Buku ini adalah cerita berlanjut setelah Bujang menemukan makna dari "Pulang" yang merupakan novel sebelumnya.
-              </figcaption>
-            </figure>
-            <p id="muat" hidden>Memuat data...</p>
-          </div>
+          <TombolFilter />
+          <DaftarProyek />
         </div>
-    </main>
+      </main>
 
     <footer>
       <p>Nurrahmatia · 25523131 · 2026</p>
