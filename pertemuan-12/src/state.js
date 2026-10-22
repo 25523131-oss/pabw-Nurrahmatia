@@ -1,13 +1,25 @@
-import { render } from './dom.js';
+import { reactive } from 'vue'
 
-const KUNCI = "pabw-p11";
-const VERSI = 2;
+const KUNCI = 'pabw-p11'
+const VERSI = 2
 
-export const state = {
+export const state = reactive({
+  kategoriAktif: 'semua',
   daftarProyek: [],
-  kategoriAktif: "semua",
-  favorit: []
-};
+  favorit: [],
+  memuat: true,
+  galat: '',
+})
+
+export function pilihKategori(nilai) {
+  state.kategoriAktif = nilai
+}
+
+export function tambahFavorit(id) {
+  const idx = state.favorit.indexOf(id)
+  if (idx === -1) state.favorit.push(id)
+  else state.favorit.splice(idx, 1)
+}
 
 export function simpan(stateObj) {
   const isi = { 
@@ -43,27 +55,8 @@ export function aturUlang() {
   state.kategoriAktif = 'semua';
   state.favorit = [];
   simpan(state);
-  render(state);
 }
 
-// Fungsi pengubah untuk data dari server 
 export function isiProyek(daftar) {
   state.daftarProyek = daftar;
-  render(state);
-}
-
-export function pilihKategori(kategori) {
-  state.kategoriAktif = kategori;
-  simpan(state);
-  render(state);
-}
-
-export function tambahFavorit(id) {
-  if (state.favorit.includes(id)) {
-    state.favorit = state.favorit.filter(favId => favId !== id); // Opsional: toggle favorit
-  } else {
-    state.favorit = [...state.favorit, id];
-  }
-  simpan(state);
-  render(state);
 }

@@ -1,12 +1,36 @@
+<script setup>
+import { state, pilihKategori, aturUlang } from '../state.js'
+</script>
+
 <template>
   <div class="filter">
-    <button data-kategori="semua" class="aktif">Semua</button>
-    <button data-kategori="Fiksi Histori">Fiksi Histori</button>
-    <button data-kategori="Petualangan">Petualangan</button>
-    <button data-kategori="Romance">Romance</button>
-  </div>
+    <button 
+      :class="{ aktif: state.kategoriAktif === 'semua' }" 
+      @click="pilihKategori('semua')"
+    >
+      Semua
+    </button>
+    <button 
+      :class="{ aktif: state.kategoriAktif === 'Fiksi Histori' }" 
+      @click="pilihKategori('Fiksi Histori')"
+    >
+      Fiksi Histori
+    </button>
+    <button 
+      :class="{ aktif: state.kategoriAktif === 'Fiksi Aksi' }" 
+      @click="pilihKategori('Fiksi Aksi')"
+    >
+      Fiksi Aksi
+    </button>
+    <button 
+      :class="{ aktif: state.kategoriAktif === 'Petualangan' }" 
+      @click="pilihKategori('Petualangan')"
+    >
+      Petualangan
+    </button>
 
-  <button id="atur-ulang">Atur ulang</button>
-  <p id="pesan-kosong" hidden>Tidak ada buku yang ditemukan dalam kategori ini.</p>
-  <p id="pesan-galat" hidden>Pesan gagal dimuat.</p>
+    <button id="atur-ulang" @click="aturUlang">
+      Atur Ulang
+    </button>
+  </div>
 </template>
