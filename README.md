@@ -122,3 +122,7 @@ bagian yang dibantu AI :
 - Membantu dalam menangani galat yang muncul
 - Membantu dalam menjelaskan tentang perintah dari worksheet. 
 - Membantu menghubungkan remote github, dan menghubungkan node.js di git bush
+
+## Versi node dan npm
+- node -v versi v24.22.0
+- npm -v versi 11.19.1
