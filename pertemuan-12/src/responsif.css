@@ -1,0 +1,40 @@
+/* ===== DASAR: berlaku di semua lebar, tanpa media query ===== */
+.isi.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) ;   /* 1fr + minmax(0) agar tabel tidak mendorong lebar */
+  grid-template-areas:none;
+  gap: var(--space-4);
+}
+
+.isi.content > .sisi,
+.isi.content > .utama{
+  grid-area: auto;
+}
+
+.galeri.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* gambar tidak melebihi wadahnya */
+img { max-width: 100%; height: auto; }
+
+/* tabel lebar dapat digulir sendiri */
+.table-wrap { overflow-x: auto; max-width: 100%; }
+
+/* teks mengikuti ukuran huruf pengguna; teks panjang tidak melebarkan kolom */
+p { font-size: 1rem; line-height: 1.6; }
+
+/* tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .galeri.grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* desktop: sidebar bersanding dengan konten */
+@media (min-width: 60rem) {
+  .isi.content {
+    grid-template-columns: 16rem 1fr;
+  }
+  .galeri.grid { grid-template-columns: repeat(3, 1fr); }
+}
