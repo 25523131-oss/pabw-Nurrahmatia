@@ -126,3 +126,18 @@ bagian yang dibantu AI :
 ## Versi node dan npm
 - node -v versi v24.22.0
 - npm -v versi 11.19.1
+
+## Pertemuan 12 Build Tooling, npm, dan Framework SPA
+
+- Membuat berkas pertemuan p12 dengan keadaan kosong
+- Membuat 4 berkas dalam forlder components
+- Membuat localStroge untuk halaman
+- Menambah Build Tooling, npm, dan Framework SPA pada berkas folder p-12
+- Memindahkan file css dan js
+- Mengikuti perintah ws dengan baik
+
+## Catatan penggunaan AI
+- Membantu mengatasi error pada kode
+- Membantu menemukan cara untuk memeriksa kode sepeti yang diminta worksheet
+- Membantu menerjemahkan bahasa yang kurang dipahami di workshett
+- Membantu  memberi pemahaman vitur dan fungsi variabel yang ada.
